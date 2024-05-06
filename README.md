@@ -24,26 +24,33 @@ The `pages/api` directory is mapped to `/api/*`. Files in this directory are tre
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
+
 ## introspect from existing DB
+```bash
 $ yarn add -D prisma
 $ npx prisma init
 $ yarn add @prisma/client
 $ npx prisma db pull
 $ npx prisma generate
+```
 
 ## setup tailwind css
+```bash
 $ yarn add -D tailwindcss postcss autoprefixer
 $ yarn add -D prettier prettier-plugin-tailwindcss
 $ npx tailwindcss init -p
+```
 
 - [Tailwind CSS Nextjs](https://tailwindcss.com/docs/guides/nextjs)
 - [Mantine UI Nextjs](https://mantine.dev/guides/next/)
 
+
 # install necessary packages
+```bash
 $ yarn add @tanstack/react-query@4.0.10 @tanstack/react-query-devtools@4.0.10
 $ yarn add @mantine/core@5.0.2 @mantine/hooks@5.0.2 @mantine/form@5.0.2 @mantine/next@5.0.2 @emotion/server@11.10.0 @emotion/react@11.10.0
 $ yarn add @heroicons/react@1.0.6 @tabler/icons@1.78.1 yup@0.32.11 axios@0.27.2 zustand@4.0.0
-
+```
 
 
 ## Learn More
