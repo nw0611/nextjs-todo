@@ -45,7 +45,7 @@ $ npx tailwindcss init -p
 - [Mantine UI Nextjs](https://mantine.dev/guides/next/)
 
 
-# install necessary packages
+## install necessary packages
 ```bash
 $ yarn add @tanstack/react-query@4.0.10 @tanstack/react-query-devtools@4.0.10
 $ yarn add @mantine/core@5.0.2 @mantine/hooks@5.0.2 @mantine/form@5.0.2 @mantine/next@5.0.2 @emotion/server@11.10.0 @emotion/react@11.10.0
