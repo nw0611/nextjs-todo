@@ -1,0 +1,4 @@
+{
+  "prettier.configPath": "/",
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
+}
