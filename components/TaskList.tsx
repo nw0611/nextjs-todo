@@ -19,7 +19,7 @@ export const TaskList = () => {
         <IconCircleDashed size={16}></IconCircleDashed>
       </ThemeIcon>}
     >
-        {tasks.map((task) => (
+        {tasks.map((task: Task) => (
           <TaskItem
             key={task.id}
             id={task.id}
