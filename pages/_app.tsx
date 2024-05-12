@@ -1,11 +1,18 @@
 import '../styles/globals.css'
+import '../styles/reset.css'
+import '@mantine/core/styles.css';
 import { useEffect } from 'react';
 import { AppProps } from 'next/app';
 import Head from 'next/head';
-import { MantineProvider } from '@mantine/core';
+import { MantineProvider, createTheme } from '@mantine/core';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
 import axios from 'axios'
+
+const theme = createTheme({
+  /** Put your mantine theme override here */
+  fontFamily: 'Verdana, sans-serif'
+});
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -38,13 +45,7 @@ function App({ Component, pageProps }: AppProps) {
       </Head>
 
       <MantineProvider
-        withGlobalStyles
-        withNormalizeCSS
-        theme={{
-          /** Put your mantine theme override here */
-          colorScheme: 'light',
-          fontFamily: 'Verdana, sans-serif'
-        }}
+        theme={theme}
       >
         <Component {...pageProps} />
       </MantineProvider>

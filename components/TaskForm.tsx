@@ -42,8 +42,9 @@ export const TaskForm = () => {
         />
         <Center mt='lg'>
           <Button
+            variant='light'
             disabled={editedTask.title === ''}
-            leftIcon={<IconDatabase size={14} />}
+            leftSection={<IconDatabase size={14} />}
             color='cyan'
             type='submit'
           >
