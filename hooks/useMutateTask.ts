@@ -72,12 +72,12 @@ export default function useMutateTask() {
       return res.data
     },
     {
-      onSuccess: (res) => {
+      onSuccess: (_, variables) => {
         const previousTodos = queryClient.getQueryData<Task[]>(['tasks'])
         if (previousTodos) {
           queryClient.setQueryData(
             ['tasks'],
-            previousTodos.filter((task) => task.id !== res.id)  
+            previousTodos.filter((task) => task.id !== variables)  
           )
         }
         reset()
