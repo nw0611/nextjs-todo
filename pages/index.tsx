@@ -28,7 +28,7 @@ const Home: NextPage = () => {
         email: email,
         password: password
       })
-      router.push(`http://localhost:3000/dashboard`)
+      router.push(`/dashboard`)
     } catch(e: any) {
       console.log('login/signUp error', e)
       if (axios.isAxiosError(e) && e.response && e.response.status === 400) {
